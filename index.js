@@ -1,6 +1,6 @@
 //Question 1
 //While mutating array methods change the objects after use and do not return any new arrays,
-//non-mutating arrays do not modify the original array but returns a new copy of the array which contains the changes made.
+//non-mutating arrays do not modify the original array but returns a new array which contains the changes made.
 
 //Mutating arrarys:
 /** 
@@ -39,4 +39,16 @@ console.log(languages);
 [ 'apple', 'mango', 'banana' ]
 
 //Question 4
-
+function maxNumber(arr){
+    let max = arr[0];
+    for (let index=0; index<arr.length;index++){
+        if (arr[index]>max) {
+            max = arr[index];
+        }
+    }
+    return max;
+}
+ const arrayOfNumbers = [2,3,8,6,18,20,48];
+ console.log(maxNumber(arrayOfNumbers));
+ //Question 5
+ function valTimesIndex(){}
