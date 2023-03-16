@@ -50,5 +50,15 @@ function maxNumber(arr){
 }
  const arrayOfNumbers = [2,3,8,6,18,20,48];
  console.log(maxNumber(arrayOfNumbers));
+ 
  //Question 5
- function valTimesIndex(){}
+  console.log(valTimesIndex);
+
+  function valTimesIndex(arr){
+    return arr.map (function (value,index){
+        return value * index;
+    });
+  }
+  let arr = [1,2,3,4,5];
+  let newArray = valTimesIndex(arr);
+  console.log(newArray);
